@@ -22,7 +22,7 @@ def get_from_ipfs(cid,content_type="json"):
 		response = requests.post(f"{infura_url}/cat?arg={cid}")
 		
 		if response.status_code == 200:
-				if content_type = "json"
+				if content_type == "json"
 						data = response.json()
 						assert isinstance(data,dict), f"get_from_ipfs should return a dict"
 						return data
