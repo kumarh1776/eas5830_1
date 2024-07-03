@@ -41,6 +41,6 @@ def get_from_ipfs(cid, content_type="json"):
             assert isinstance(data, dict), "get_from_ipfs should return a dict"
             return data
         else:
-            raise Exception("Unsupported content type")
+            raise Exception("Not a dict")
     else:
         raise Exception(response.text)
